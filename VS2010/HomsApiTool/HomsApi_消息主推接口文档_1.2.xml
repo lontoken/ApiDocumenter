@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK"?>
+    <function no="1000" name="接口名" func_name="function_name" update_date="20140411" version="1.0" status="公开">
+        <description>接口的详细说明</description>
+        <input>
+            <field name="user_token" type="C40" required="Y" description="用户口令" default="">
+                备注信息user_token
+            </field>
+            <field name="fund_account" type="C40" required="Y" description="用户口令" default="">
+                备注信息fund_account
+            </field>
+        </input>
+        <output>
+            <field name="client_name" type="C40" description="用户口令" default="">
+                备注信息fund_account
+            </field>
+        </output>
+    </funcion>
+</xml>

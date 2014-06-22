@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ApiDocEngine", "ApiDocEngine\ApiDocEngine.vcxproj", "{A78EDE2A-BE9D-455F-AA8C-C3BA0C73E607}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomsApiTool", "HomsApiTool\HomsApiTool.vcxproj", "{8EAC2D93-CB1C-4790-BE26-AFB74FEF5A45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A78EDE2A-BE9D-455F-AA8C-C3BA0C73E607}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A78EDE2A-BE9D-455F-AA8C-C3BA0C73E607}.Debug|Win32.Build.0 = Debug|Win32
+		{A78EDE2A-BE9D-455F-AA8C-C3BA0C73E607}.Release|Win32.ActiveCfg = Release|Win32
+		{A78EDE2A-BE9D-455F-AA8C-C3BA0C73E607}.Release|Win32.Build.0 = Release|Win32
+		{8EAC2D93-CB1C-4790-BE26-AFB74FEF5A45}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8EAC2D93-CB1C-4790-BE26-AFB74FEF5A45}.Debug|Win32.Build.0 = Debug|Win32
+		{8EAC2D93-CB1C-4790-BE26-AFB74FEF5A45}.Release|Win32.ActiveCfg = Release|Win32
+		{8EAC2D93-CB1C-4790-BE26-AFB74FEF5A45}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
