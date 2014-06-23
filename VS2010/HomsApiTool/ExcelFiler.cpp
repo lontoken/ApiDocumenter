@@ -62,6 +62,12 @@ ExcelFiler::~ExcelFiler()
 //初始化EXCEL文件，
 BOOL ExcelFiler::InitExcel()
 {
+    //初始化COM的动态连接库
+    if(!AfxOleInit())  
+    {
+        AfxMessageBox("无法初始化COM的动态连接库!");
+        return FALSE;
+    }
 
     //创建Excel 2000服务器(启动Excel) 
     if (!excel_application_.CreateDispatch("Excel.Application",NULL)) 
@@ -69,6 +75,9 @@ BOOL ExcelFiler::InitExcel()
         AfxMessageBox("创建Excel服务失败,你可能没有安装EXCEL，请检查!"); 
         return FALSE;
     }
+
+    excel_application_.put_Visible(FALSE);         //使Excel不可见
+    excel_application_.put_UserControl(TRUE);      //允许其它用户控制Excel
 
     excel_application_.put_DisplayAlerts(FALSE); 
     return TRUE;
@@ -145,8 +154,6 @@ void ExcelFiler::CloseExcelFile(BOOL if_save)
         //打开文件的名称清空
         open_excel_file_.Empty();
     }
-
-    
 
     excel_sheets_.ReleaseDispatch();
     excel_work_sheet_.ReleaseDispatch();
@@ -415,28 +422,98 @@ int ExcelFiler::GetCellInt(long irow, long icolumn)
     return num;
 }
 
-void ExcelFiler::SetCellString(long irow, long icolumn,CString new_string)
+void ExcelFiler::SetCellString(long irow, long icolumn,CString new_string, long color, long bgcolor)
 {
     COleVariant new_value(new_string);
-    CRange start_range = excel_work_sheet_.get_Range(COleVariant("A1"),covOptional);
-    CRange write_range = start_range.get_Offset(COleVariant((long)irow -1),COleVariant((long)icolumn -1) );
+    CRange start_range = excel_work_sheet_.get_Range(COleVariant("A1"), covOptional);
+    CRange write_range = start_range.get_Offset(COleVariant((long)irow -1), COleVariant((long)icolumn -1));
     write_range.put_Value2(new_value);
+
+    if(color >= 0){
+        CFont0 font;
+        font.AttachDispatch(write_range.get_Font());
+        font.put_Color(_variant_t((long)color));        //设置字体颜色
+        font.DetachDispatch();
+    }
+
+    if(bgcolor >= 0){
+        Cnterior cont;
+        cont.AttachDispatch(write_range.get_Interior());
+        cont.put_Color(COleVariant(_variant_t(bgcolor)));
+        //cont.put_ColorIndex(COleVariant(_variant_t(RGB(0, 0, 0))));
+        //cont.put_PatternColor(COleVariant(_variant_t(RGB(0, 0, 0))));
+        cont.DetachDispatch();
+
+        CBorders borders;
+        borders.AttachDispatch(write_range.get_Borders());
+        CBorder border;
+        border = borders.get_Item(1);
+        border.put_Color(_variant_t(RGB(215, 215, 215)));
+        border.ReleaseDispatch();
+        border = borders.get_Item(2);
+        border.put_Color(_variant_t(RGB(215, 215, 215)));
+        border.ReleaseDispatch();
+        border = borders.get_Item(3);
+        border.put_Color(_variant_t(RGB(215, 215, 215)));
+        border.ReleaseDispatch();
+        border = borders.get_Item(4);
+        border.put_Color(_variant_t(RGB(215, 215, 215)));
+        border.ReleaseDispatch();
+        borders.ReleaseDispatch();
+    }
+
     start_range.ReleaseDispatch();
     write_range.ReleaseDispatch();
-
 }
 
-void ExcelFiler::SetCellInt(long irow, long icolumn,int new_int)
+void ExcelFiler::SetCellInt(long irow, long icolumn,int new_int, long color, long bgcolor)
 {
     COleVariant new_value((long)new_int);
     
     CRange start_range = excel_work_sheet_.get_Range(COleVariant("A1"),covOptional);
     CRange write_range = start_range.get_Offset(COleVariant((long)irow -1),COleVariant((long)icolumn -1) );
     write_range.put_Value2(new_value);
+
+    if(color >= 0){
+        CFont0 font;
+        font.AttachDispatch(write_range.get_Font());
+        font.put_Color(_variant_t((long)color));        //设置字体颜色
+        font.DetachDispatch();
+    }
+
+    if(bgcolor >= 0){
+        Cnterior cont;
+        cont.AttachDispatch(write_range.get_Interior());
+        cont.put_Color(COleVariant(_variant_t(bgcolor)));
+        cont.DetachDispatch();
+    }
+
     start_range.ReleaseDispatch();
     write_range.ReleaseDispatch();
 }
 
+void ExcelFiler::SetColumnWidth(long icolumn, int width)
+{
+    CRange start_range = excel_work_sheet_.get_Range(COleVariant("A1"), covOptional);
+    CRange write_range = start_range.get_Offset(COleVariant((long)0), COleVariant((long)icolumn -1));
+    write_range.put_ColumnWidth(_variant_t((long)width));
+    start_range.ReleaseDispatch();
+    write_range.ReleaseDispatch();
+}
+
+void ExcelFiler::SetCellBackgroundColor(long irow, long icolumn, long color)
+{
+    CRange start_range = excel_work_sheet_.get_Range(COleVariant("A1"), covOptional);
+    CRange write_range = start_range.get_Offset(COleVariant((long)irow - 1), COleVariant((long)icolumn -1));
+
+    Cnterior cont;
+    cont.AttachDispatch(write_range.get_Interior());
+    cont.put_Color(COleVariant(_variant_t(color)));
+    cont.DetachDispatch();
+
+    start_range.ReleaseDispatch();
+    write_range.ReleaseDispatch();
+}
 
 //
 void ExcelFiler::ShowInExcel(BOOL bShow)

@@ -7,6 +7,10 @@
 #include "CWorksheet.h"
 #include "CWorksheets.h"
 #include "CApplication.h"
+#include "CFont0.h"
+#include "Cnterior.h"
+#include "CBorder.h"
+#include "CBorders.h"
 
 ///
 ///用于OLE的方式的EXCEL读写，
@@ -88,10 +92,11 @@ public:
     CString GetLoadSheetName();
     
     ///写入一个CELL一个int
-    void SetCellInt(long irow, long icolumn,int new_int);
+    void SetCellInt(long irow, long icolumn, int new_int, long color = -1, long bgcolor = -1);
     ///写入一个CELL一个string
-    void SetCellString(long irow, long icolumn,CString new_string);
-    
+    void SetCellString(long irow, long icolumn,CString new_string, long color = -1, long bgcolor = -1);
+    void SetColumnWidth(long icolumn, int width);
+    void SetCellBackgroundColor(long irow, long icolumn, long color);
 public:
     ///初始化EXCEL OLE
     static BOOL InitExcel();

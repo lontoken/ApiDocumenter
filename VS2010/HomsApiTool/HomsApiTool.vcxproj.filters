@@ -85,6 +85,18 @@
     <ClInclude Include="ApiDocExcel.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="CFont0.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cnterior.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CBorder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CBorders.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HomsApiTool.cpp">

@@ -107,6 +107,10 @@
   <ItemGroup>
     <ClInclude Include="ApiDocExcel.h" />
     <ClInclude Include="CApplication.h" />
+    <ClInclude Include="CBorder.h" />
+    <ClInclude Include="CBorders.h" />
+    <ClInclude Include="CFont0.h" />
+    <ClInclude Include="Cnterior.h" />
     <ClInclude Include="CRange.h" />
     <ClInclude Include="CWorkbook.h" />
     <ClInclude Include="CWorkbooks.h" />
