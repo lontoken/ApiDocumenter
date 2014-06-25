@@ -92,11 +92,15 @@ public:
     CString GetLoadSheetName();
     
     ///写入一个CELL一个int
-    void SetCellInt(long irow, long icolumn, int new_int, long color = -1, long bgcolor = -1);
+    void SetCellInt(long irow, long icolumn, int new_int, long color = -1, long bgcolor = -1, long alignment = 1);
     ///写入一个CELL一个string
-    void SetCellString(long irow, long icolumn,CString new_string, long color = -1, long bgcolor = -1);
+    void SetCellString(long irow, long icolumn,CString new_string, long color = -1, long bgcolor = -1, long alignment = 1);
     void SetColumnWidth(long icolumn, int width);
     void SetCellBackgroundColor(long irow, long icolumn, long color);
+    void SetAreaBackgroundColor(long iRowStart, long iColumnStart, long iRowEnd, long iColumnEnd, long color);
+    void SetAllCellBackgroundColor(long color);
+    void MergeCell(long iRowStart, long iColumnStart, long iRowEnd, long iColumnEnd);
+    
 public:
     ///初始化EXCEL OLE
     static BOOL InitExcel();

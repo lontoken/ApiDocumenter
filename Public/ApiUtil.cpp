@@ -78,6 +78,11 @@ int AssigneFunctionItem(FunctionItem *funcItem, const tinyxml2::XMLElement *ele)
         strncpy(funcItem->name, attr->Value(), sizeof(funcItem->name));
     }
 
+    attr = ele->FindAttribute("func_name");
+    if(attr){
+        strncpy(funcItem->funcName, attr->Value(), sizeof(funcItem->funcName));
+    }
+
     iRet = ele->QueryIntAttribute("update_date", &(funcItem->updateDate));
     if(iRet){
         FILE_LOG_ERROR << "[AssigneFunctionItem]updateDate error.";
@@ -91,6 +96,11 @@ int AssigneFunctionItem(FunctionItem *funcItem, const tinyxml2::XMLElement *ele)
     attr = ele->FindAttribute("status");
     if(attr){
         strncpy(funcItem->status, attr->Value(), sizeof(funcItem->status));
+    }
+
+    attr = ele->FindAttribute("result_set_return");
+    if(attr){
+        strncpy(funcItem->resultSetReturn, attr->Value(), sizeof(funcItem->resultSetReturn));
     }
 
     const tinyxml2::XMLElement* eleChild = ele->FirstChildElement("description");

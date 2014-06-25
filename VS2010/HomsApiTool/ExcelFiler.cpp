@@ -422,12 +422,32 @@ int ExcelFiler::GetCellInt(long irow, long icolumn)
     return num;
 }
 
-void ExcelFiler::SetCellString(long irow, long icolumn,CString new_string, long color, long bgcolor)
+void ExcelFiler::SetCellString(long irow, long icolumn, CString new_string, long color, long bgcolor, long alignment)
 {
     COleVariant new_value(new_string);
     CRange start_range = excel_work_sheet_.get_Range(COleVariant("A1"), covOptional);
     CRange write_range = start_range.get_Offset(COleVariant((long)irow -1), COleVariant((long)icolumn -1));
+
+    if(!new_string.IsEmpty()){
+        char str[1024] = {0};
+        _snprintf(str, sizeof(str), "%f", atof(new_string.GetString()));
+        int size = sizeof(str);
+        if(new_string.GetLength() < size){
+            size = new_string.GetLength();
+        }
+
+        if(strncmp(str, new_string, size) == 0){
+            if(alignment == 1){
+                alignment = 2;
+            }else if(alignment == 2){
+                alignment = 1;
+            }
+        }
+    }
+    
+
     write_range.put_Value2(new_value);
+    write_range.put_HorizontalAlignment(COleVariant(_variant_t((long)alignment)));
 
     if(color >= 0){
         CFont0 font;
@@ -466,13 +486,21 @@ void ExcelFiler::SetCellString(long irow, long icolumn,CString new_string, long 
     write_range.ReleaseDispatch();
 }
 
-void ExcelFiler::SetCellInt(long irow, long icolumn,int new_int, long color, long bgcolor)
+void ExcelFiler::SetCellInt(long irow, long icolumn,int new_int, long color, long bgcolor, long alignment)
 {
     COleVariant new_value((long)new_int);
     
     CRange start_range = excel_work_sheet_.get_Range(COleVariant("A1"),covOptional);
     CRange write_range = start_range.get_Offset(COleVariant((long)irow -1),COleVariant((long)icolumn -1) );
     write_range.put_Value2(new_value);
+
+    if(alignment == 1){
+        alignment = 2;
+    }else if(alignment == 2){
+        alignment = 1;
+    }
+
+    write_range.put_HorizontalAlignment(COleVariant(_variant_t((long)alignment)));
 
     if(color >= 0){
         CFont0 font;
@@ -513,6 +541,66 @@ void ExcelFiler::SetCellBackgroundColor(long irow, long icolumn, long color)
 
     start_range.ReleaseDispatch();
     write_range.ReleaseDispatch();
+}
+
+void ExcelFiler::SetAreaBackgroundColor(long iRowStart, long iColumnStart, long iRowEnd, long iColumnEnd, long color)
+{
+    char posStart[10] = {0};
+    char posEnd[10] = {0};
+    _snprintf(posStart, sizeof(posStart), "%c%d", 'A' + iColumnStart -1, iRowStart);
+    _snprintf(posEnd, sizeof(posEnd), "%c%d", 'A' + iColumnEnd -1, iRowEnd);
+
+    CRange range;
+    range.AttachDispatch(excel_work_sheet_.get_Range(_variant_t(posStart), _variant_t(posEnd))); //选中
+
+    Cnterior cont;
+    cont.AttachDispatch(range.get_Interior());
+    cont.put_Color(COleVariant(_variant_t(color)));
+    cont.DetachDispatch();
+
+    CBorders borders;
+    borders.AttachDispatch(range.get_Borders());
+    CBorder border;
+    border = borders.get_Item(1);
+    border.put_Color(_variant_t(RGB(215, 215, 215)));
+    border.ReleaseDispatch();
+    border = borders.get_Item(2);
+    border.put_Color(_variant_t(RGB(215, 215, 215)));
+    border.ReleaseDispatch();
+    border = borders.get_Item(3);
+    border.put_Color(_variant_t(RGB(215, 215, 215)));
+    border.ReleaseDispatch();
+    border = borders.get_Item(4);
+    border.put_Color(_variant_t(RGB(215, 215, 215)));
+    border.ReleaseDispatch();
+    borders.ReleaseDispatch();
+
+    range.ReleaseDispatch();
+}
+
+void ExcelFiler::SetAllCellBackgroundColor(long color)
+{
+    CRange start_range = excel_work_sheet_.get_Cells();
+
+    Cnterior cont;
+    cont.AttachDispatch(start_range.get_Interior());
+    cont.put_Color(COleVariant(_variant_t(color)));
+    cont.DetachDispatch();
+
+    start_range.ReleaseDispatch();
+}
+
+void ExcelFiler::MergeCell(long iRowStart, long iColumnStart, long iRowEnd, long iColumnEnd)
+{
+    char posStart[10] = {0};
+    char posEnd[10] = {0};
+    _snprintf(posStart, sizeof(posStart), "%c%d", 'A' + iColumnStart -1, iRowStart);
+    _snprintf(posEnd, sizeof(posEnd), "%c%d", 'A' + iColumnEnd -1, iRowEnd);
+
+    CRange range;
+    range.AttachDispatch(excel_work_sheet_.get_Range(_variant_t(posStart), _variant_t(posEnd))); //选中
+    range.Merge(_variant_t(0)); //合并单元格
+    range.ReleaseDispatch();
 }
 
 //

@@ -18,6 +18,7 @@ private:
     static int ColumnStart;
     static int RowSpace;
     static long BackgoundColorExplain;
+    static long BackgoundColorNormal;
     static long FontColorStress;
 };
 

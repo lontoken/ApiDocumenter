@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="GBK"?>
-    <function no="769000" name="登录" func_name="func_login" update_date="20140601" version="1.0" status="公开" result_set_return="Y">
+    <function no="769000" name="登录" func_name="func_login" update_date="20140601" version="1.01.1" status="公开" result_set_return="Y">
         <description>建立与HOMS系统的连接，在没登陆的情况下调用其它接口会失败。</description>
         <input>
             <filed name="operator_no" type="C18" required="Y" description="操作员编号" default="">

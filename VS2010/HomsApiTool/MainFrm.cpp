@@ -106,15 +106,15 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 {
-    //cs.cx = 100;
-    //cs.cy=800;
-    //cs.style |= FWS_ADDTOTITLE;
-    //lstrcpy(cs.lpszName, _T("tet"));
+    //m_strTitle   =   _T(""); //可以随意设置标题
 
     if( !CFrameWndEx::PreCreateWindow(cs) )
         return FALSE;
     // TODO: 在此处通过修改
     //  CREATESTRUCT cs 来修改窗口类或样式
+    cs.cx=450;  
+    cs.cy=600;  
+    cs.style=cs.style&(~WS_THICKFRAME);  
 
     return TRUE;
 }
@@ -140,4 +140,14 @@ void CMainFrame::OnViewCustomize()
 {
     CMFCToolBarsCustomizeDialog* pDlgCust = new CMFCToolBarsCustomizeDialog(this, TRUE /* 扫描菜单*/);
     pDlgCust->Create();
+}
+
+void CMainFrame::OnUpdateFrameTitle(BOOL bAddToTitle)
+{
+    if ( (GetStyle() & FWS_ADDTOTITLE) == 0 )
+        return ; 
+
+    m_strTitle = _T("HomsApi接口文档工具"); // 也可以动态换成任何标题，比如打开文件后的文件名称
+
+    SetWindowText(m_strTitle);
 }

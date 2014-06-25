@@ -38,6 +38,7 @@ protected:  // 控件条嵌入成员
 protected:
     afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
     afx_msg void OnViewCustomize();
+    afx_msg void OnUpdateFrameTitle(BOOL bAddToTitle);
     DECLARE_MESSAGE_MAP()
 
 };

@@ -17,6 +17,7 @@ typedef char TFunctionDescription[1024];
 typedef char TFiledName[64];
 typedef char TFiledType[64];
 typedef char TFiledRequired[2];
+typedef char TResultSetReturn[2];
 typedef char TFiledDescription[512];
 typedef char TFiledDefault[128];
 typedef char TFiledDetail[512];
@@ -65,10 +66,12 @@ struct FunctionItem
 {
     TFunctionNo no;
     TFunctionName name;
+    TFunctionName funcName;
     TFunctionUpdateDate updateDate;
     TFunctionVersion version;
     TFunctionStatus status;
     TFunctionDescription description;
+    TResultSetReturn resultSetReturn;
 
     std::vector<FiledInput*> filedsInput;
     std::vector<FiledOutput*> filedsOutput;
@@ -76,10 +79,12 @@ public:
     FunctionItem(){
         no = 0;
         memset(name, 0, sizeof(name));
+        memset(funcName, 0, sizeof(funcName));
         updateDate = 0;
         memset(version, 0, sizeof(version));
         memset(status, 0, sizeof(status));
         memset(description, 0, sizeof(description));
+        memset(resultSetReturn, 0, sizeof(resultSetReturn));
     };
     virtual ~FunctionItem(){
         for(std::vector<FiledInput*>::iterator it = filedsInput.begin(); it != filedsInput.end(); ++it){

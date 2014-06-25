@@ -6,7 +6,7 @@
 #include "ApiTypeDefine.h"
 #include <vector>
 
-#ifdef TRADER_API_LIB
+#ifdef API_DOC_ENGINE_LIB
 #define API_DOC_EXPORT __declspec(dllexport)
 #else
 #define API_DOC_EXPORT __declspec(dllimport)
