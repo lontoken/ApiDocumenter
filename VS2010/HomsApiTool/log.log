@@ -1,0 +1,146 @@
+- 22:06:18.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:06:25.005 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:06:25.005 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:06:25.005 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:06:25.020 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:06:25.020 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:08:47.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:08:51.432 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:08:51.432 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:08:51.432 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:08:51.448 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:08:51.448 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:09:07.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:09:11.900 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:09:11.900 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:09:11.900 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:09:11.900 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:09:11.900 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:13:11.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:13:19.472 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:13:19.472 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:13:19.472 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:13:19.488 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:13:19.488 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:14:02.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:14:05.838 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:14:05.838 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:14:05.838 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:14:05.838 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:14:05.838 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:17:37.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:17:44.286 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:17:44.302 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:17:44.302 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:17:44.302 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:17:44.302 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:18:09.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:18:13.946 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:18:13.946 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:18:13.946 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:18:13.946 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:18:13.946 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:20:20.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:20:24.088 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:20:24.088 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:20:24.088 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:20:24.088 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:20:24.103 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:21:30.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:21:36.133 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:21:36.133 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:21:36.133 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:21:36.133 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:21:36.133 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:28:24.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:28:58.712 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:28:58.712 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:28:58.712 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:28:58.712 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:28:58.712 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:35:12.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:35:20.831 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:35:20.831 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:35:20.831 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:35:20.831 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:35:20.831 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:37:31.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:37:35.290 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:37:35.290 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:37:35.290 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:37:35.290 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:37:35.290 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:37:46.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:37:50.259 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:37:50.259 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:37:50.259 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:37:50.259 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:37:50.259 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:49:50.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:49:55.743 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:49:55.743 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:49:55.743 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:49:55.743 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:49:55.743 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:51:19.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:51:24.897 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:51:24.897 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:51:24.897 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:51:24.897 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:51:24.897 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:51:49.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:51:54.399 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:51:54.399 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:51:54.399 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:51:54.399 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:51:54.399 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:53:31.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:53:35.197 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:53:35.197 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:53:35.197 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:53:35.197 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:53:35.197 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:55:31.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:55:37.490 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:55:37.490 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:55:37.490 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:55:38.505 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:55:38.505 INFO: [ApiDocEngine::GetFuncList]start.
+- 22:56:31.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 22:56:35.368 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 22:56:35.368 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:56:35.368 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 22:56:35.368 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 22:56:35.368 INFO: [ApiDocEngine::GetFuncList]start.
+- 23:02:17.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:02:59.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:03:03.056 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 23:03:03.056 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 23:03:03.056 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 23:03:03.056 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 23:03:03.056 INFO: [ApiDocEngine::GetFuncList]start.
+- 23:04:23.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:04:27.915 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 23:04:27.915 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 23:04:27.915 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 23:04:27.931 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 23:04:27.931 INFO: [ApiDocEngine::GetFuncList]start.
+- 23:09:49.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:09:55.897 INFO: [ApiDocEngine::LoadFuncFromXml]start.
+- 23:09:55.897 INFO: [ApiDocEngine::LoadFuncFromXml]LoadFundionFromXml start.name=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 23:09:55.897 INFO: [ApiFunctionMgr::LoadFundionFromXml]start.filePath=E:\WorkStation\ApiDocumenter\VS2010\HomsApiTool\HomsApi_功能调用接口文档_1.2.xml
+- 23:09:55.897 INFO: [ApiDocEngine::LoadFuncFromXml]end.iRet=7
+- 23:09:55.897 INFO: [ApiDocEngine::GetFuncList]start.
+- 23:10:08.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:11:51.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:12:03.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:13:58.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:14:23.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:16:46.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:17:13.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:17:45.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:18:05.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:20:50.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:21:07.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:25:49.000 INFO: [ApiDoc::CreateApiDoc]start.
+- 23:26:12.000 INFO: [ApiDoc::CreateApiDoc]start.
