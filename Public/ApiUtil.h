@@ -16,4 +16,6 @@ int AssigneFunctionItem(FunctionItem *funcItem, const tinyxml2::XMLElement *ele)
 
 //test 163
 
+//test lontoken
+
 #endif
